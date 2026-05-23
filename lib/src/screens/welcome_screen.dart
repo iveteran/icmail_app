@@ -5,7 +5,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:shimmer_animation/shimmer_animation.dart';
 
-import '../../enough_mail_app.dart';
+import '../../icmail_app.dart';
 import '../settings/theme/icon_service.dart';
 import '../widgets/legalese.dart';
 
@@ -55,7 +55,7 @@ class WelcomeScreen extends ConsumerWidget {
             'assets/images/icmail.png',
             height: 200,
             fit: BoxFit.cover,
-            package: 'enough_mail_app',
+            package: 'icmail_app',
           ),
           decoration: PageDecoration(pageColor: Colors.green[700]),
           footer: _buildFooter(context, localizations),
@@ -67,7 +67,7 @@ class WelcomeScreen extends ConsumerWidget {
             'assets/images/mailboxes.png',
             height: 200,
             fit: BoxFit.cover,
-            package: 'enough_mail_app',
+            package: 'icmail_app',
           ),
           decoration: const PageDecoration(pageColor: Color(0xff543226)),
           footer: _buildFooter(context, localizations),
@@ -79,7 +79,7 @@ class WelcomeScreen extends ConsumerWidget {
             'assets/images/swipe_press.png',
             height: 200,
             fit: BoxFit.cover,
-            package: 'enough_mail_app',
+            package: 'icmail_app',
           ),
           decoration: const PageDecoration(pageColor: Color(0xff761711)),
           footer: _buildFooter(context, localizations),
@@ -91,7 +91,7 @@ class WelcomeScreen extends ConsumerWidget {
             'assets/images/drawing.jpg',
             height: 200,
             fit: BoxFit.cover,
-            package: 'enough_mail_app',
+            package: 'icmail_app',
           ),
           footer: _buildFooter(context, localizations),
         ),

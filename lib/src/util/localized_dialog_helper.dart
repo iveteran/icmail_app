@@ -43,7 +43,7 @@ class LocalizedDialogHelper {
             child: Text(localizations.feedbackActionHelpDeveloping),
             onPressed: () async {
               await launcher.launchUrl(Uri.parse(
-                'https://github.com/Enough-Software/enough_mail_app',
+                'https://github.com/iveteran/icmail_app',
               ));
             },
           ),
