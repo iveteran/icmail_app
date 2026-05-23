@@ -50,6 +50,6 @@ by calling `dart run build_runner build --delete-conflicting-outputs`.
 
 ## Related Projects
 Check out these related projects:
-* [maily](https://github.com/iveteran/ICMail) email app based on icmail_app.
+* [ICMail](https://github.com/iveteran/ICMail) email app based on icmail_app.
 
 
