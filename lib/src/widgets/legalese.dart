@@ -7,9 +7,9 @@ import 'text_with_links.dart';
 class Legalese extends ConsumerWidget {
   const Legalese({super.key});
   static const String urlPrivacyPolicy =
-      'https://www.enough.de/privacypolicy/maily-pp.html';
+      'https://matrix.works/icmail/privacypolicy.html';
   static const String urlTermsAndConditions =
-      'https://github.com/Enough-Software/enough_mail_app/blob/main/LICENSE';
+      'https://github.com/iveteran/icmail_app/blob/main/LICENSE';
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

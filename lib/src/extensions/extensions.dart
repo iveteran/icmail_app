@@ -84,7 +84,7 @@ class AppExtension {
   Map<String, dynamic> toJson() => _$AppExtensionToJson(this);
 
   /// REtrieves the app extension url for the given [domain]
-  static String urlFor(String domain) => 'https://$domain/.maily.json';
+  static String urlFor(String domain) => 'https://$domain/.icmail.json';
 
   //// Loads the app extensions for the given [mailAccount]
   static Future<List<AppExtension>> loadFor(MailAccount mailAccount) async {

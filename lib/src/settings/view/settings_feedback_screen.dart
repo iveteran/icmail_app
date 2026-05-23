@@ -34,7 +34,7 @@ class _SettingsFeedbackScreenState
   Future<void> _loadAppInformation() async {
     final packageInfo = await PackageInfo.fromPlatform();
     var textualInfo =
-        'Maily v${packageInfo.version}+${packageInfo.buildNumber}\n'
+        'ICMail v${packageInfo.version}+${packageInfo.buildNumber}\n'
         'Platform '
         '${Platform.operatingSystem} ${Platform.operatingSystemVersion}\n';
     final deviceInfoPlugin = DeviceInfoPlugin();
@@ -120,7 +120,7 @@ class _SettingsFeedbackScreenState
                     child: Text(localizations.feedbackActionSuggestFeature),
                     onPressed: () async {
                       await launcher
-                          .launchUrl(Uri.parse('https://maily.userecho.com/'));
+                          .launchUrl(Uri.parse('https://icmail.userecho.com/'));
                     },
                   ),
                 ),
@@ -130,7 +130,7 @@ class _SettingsFeedbackScreenState
                     child: Text(localizations.feedbackActionReportProblem),
                     onPressed: () async {
                       await launcher
-                          .launchUrl(Uri.parse('https://maily.userecho.com/'));
+                          .launchUrl(Uri.parse('https://icmail.userecho.com/'));
                     },
                   ),
                 ),
@@ -141,7 +141,7 @@ class _SettingsFeedbackScreenState
                     onPressed: () async {
                       await launcher.launchUrl(
                         Uri.parse(
-                          'https://github.com/Enough-Software/enough_mail_app',
+                          'https://github.com/iveteran/icmail_app',
                         ),
                       );
                     },

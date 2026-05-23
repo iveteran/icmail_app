@@ -1,13 +1,15 @@
+// ignore: unused_import
 import 'package:intl/intl.dart' as intl;
-
 import 'app_localizations.g.dart';
+
+// ignore_for_file: type=lint
 
 /// The translations for German (`de`).
 class AppLocalizationsDe extends AppLocalizations {
   AppLocalizationsDe([String locale = 'de']) : super(locale);
 
   @override
-  String get signature => 'Mit Maily gesendet';
+  String get signature => 'Mit ICMail gesendet';
 
   @override
   String get actionCancel => 'Abbrechen';
@@ -49,37 +51,41 @@ class AppLocalizationsDe extends AppLocalizations {
   String get actionAddressSearch => 'Suchen';
 
   @override
-  String get splashLoading1 => 'Maily startet...';
+  String get splashLoading1 => 'ICMail startet...';
 
   @override
-  String get splashLoading2 => 'Maily fängt an zu arbeiten...';
+  String get splashLoading2 => 'ICMail fängt an zu arbeiten...';
 
   @override
-  String get splashLoading3 => 'Maily startet in 10, 9, 8...';
+  String get splashLoading3 => 'ICMail startet in 10, 9, 8...';
 
   @override
-  String get welcomePanel1Title => 'Maily';
+  String get welcomePanel1Title => 'ICMail';
 
   @override
-  String get welcomePanel1Text => 'Willkommen zu Maily, deinem freundlichen und schnellen E-Mail Helferlein!';
+  String get welcomePanel1Text =>
+      'Willkommen zu ICMail, deinem freundlichen und schnellen E-Mail Helferlein!';
 
   @override
   String get welcomePanel2Title => 'Konten';
 
   @override
-  String get welcomePanel2Text => 'Verwalte beliebig viele E-Mail Konten. Lese und suche Mails in allen Konten gleichzeitig';
+  String get welcomePanel2Text =>
+      'Verwalte beliebig viele E-Mail Konten. Lese und suche Mails in allen Konten gleichzeitig';
 
   @override
   String get welcomePanel3Title => 'Wisch und drück mich!';
 
   @override
-  String get welcomePanel3Text => 'Wische eine E-Mail um sie zu löschen oder als gelesen zu markieren. Halte eine E-Mail lange um mehrere gleichzeitig zu bearbeiten.';
+  String get welcomePanel3Text =>
+      'Wische eine E-Mail um sie zu löschen oder als gelesen zu markieren. Halte eine E-Mail lange um mehrere gleichzeitig zu bearbeiten.';
 
   @override
   String get welcomePanel4Title => 'Halte Deinen Posteingang sauber';
 
   @override
-  String get welcomePanel4Text => 'Melde Dich von Newslettern mit einem Klick ab.';
+  String get welcomePanel4Text =>
+      'Melde Dich von Newslettern mit einem Klick ab.';
 
   @override
   String get welcomeActionSignIn => 'Melde dich bei deinem E-Mail Konto an';
@@ -94,7 +100,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get homeActionsShowAsList => 'Listen Modus';
 
   @override
-  String get homeEmptyFolderMessage => 'Alles fertig!\n\nEs gibt keine E-Mails in diesem Ordner.';
+  String get homeEmptyFolderMessage =>
+      'Alles fertig!\n\nEs gibt keine E-Mails in diesem Ordner.';
 
   @override
   String get homeEmptySearchMessage => 'Keine E-Mails gefunden.';
@@ -150,7 +157,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String multipleMovedToJunk(int number) {
     final intl.NumberFormat numberNumberFormat = intl.NumberFormat.compactLong(
       locale: localeName,
-      
     );
     final String numberString = numberNumberFormat.format(number);
 
@@ -167,7 +173,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String multipleMovedToInbox(int number) {
     final intl.NumberFormat numberNumberFormat = intl.NumberFormat.compactLong(
       locale: localeName,
-      
     );
     final String numberString = numberNumberFormat.format(number);
 
@@ -184,7 +189,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String multipleMovedToArchive(int number) {
     final intl.NumberFormat numberNumberFormat = intl.NumberFormat.compactLong(
       locale: localeName,
-      
     );
     final String numberString = numberNumberFormat.format(number);
 
@@ -201,7 +205,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String multipleMovedToTrash(int number) {
     final intl.NumberFormat numberNumberFormat = intl.NumberFormat.compactLong(
       locale: localeName,
-      
     );
     final String numberString = numberNumberFormat.format(number);
 
@@ -215,7 +218,8 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get multipleSelectionNeededInfo => 'Wähle mindestens eine Nachricht aus.';
+  String get multipleSelectionNeededInfo =>
+      'Wähle mindestens eine Nachricht aus.';
 
   @override
   String multipleSelectionActionFailed(String details) {
@@ -226,7 +230,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String multipleMoveTitle(int number) {
     final intl.NumberFormat numberNumberFormat = intl.NumberFormat.compactLong(
       locale: localeName,
-      
     );
     final String numberString = numberNumberFormat.format(number);
 
@@ -302,7 +305,7 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get drawerEntryAbout => 'Über Maily';
+  String get drawerEntryAbout => 'Über ICMail';
 
   @override
   String get drawerEntrySettings => 'Einstellungen';
@@ -311,7 +314,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String drawerAccountsSectionTitle(int number) {
     final intl.NumberFormat numberNumberFormat = intl.NumberFormat.compactLong(
       locale: localeName,
-      
     );
     final String numberString = numberNumberFormat.format(number);
 
@@ -503,7 +505,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String messageActionForwardAttachments(int number) {
     final intl.NumberFormat numberNumberFormat = intl.NumberFormat.compactLong(
       locale: localeName,
-      
     );
     final String numberString = numberNumberFormat.format(number);
 
@@ -582,10 +583,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get redirectTitle => 'Umleiten';
 
   @override
-  String get redirectInfo => 'Leite diese Nachricht an folgende Empfänger:innen um. Umleiten verändert nicht die Nachricht.';
+  String get redirectInfo =>
+      'Leite diese Nachricht an folgende Empfänger:innen um. Umleiten verändert nicht die Nachricht.';
 
   @override
-  String get redirectEmailInputRequired => 'Bitte gebe mindestens eine gültige E-Mail-Adresse ein.';
+  String get redirectEmailInputRequired =>
+      'Bitte gebe mindestens eine gültige E-Mail-Adresse ein.';
 
   @override
   String searchQueryDescription(String folder) {
@@ -598,7 +601,8 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get legaleseUsage => 'Durch die Nutzung von Maily stimmst du unserer [PP] und unseren [TC] zu.';
+  String get legaleseUsage =>
+      'Durch die Nutzung von ICMail stimmst du unserer [PP] und unseren [TC] zu.';
 
   @override
   String get legalesePrivacyPolicy => 'Datenschutzerlärung';
@@ -607,7 +611,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get legaleseTermsAndConditions => 'Bedingungen';
 
   @override
-  String get aboutApplicationLegalese => 'Maily ist freie Software, die unter der GPL GNU General Public License veröffentlicht ist.';
+  String get aboutApplicationLegalese =>
+      'ICMail ist freie Software, die unter der GPL GNU General Public License veröffentlicht ist.';
 
   @override
   String get feedbackActionSuggestFeature => 'Feature vorschlagen';
@@ -616,16 +621,17 @@ class AppLocalizationsDe extends AppLocalizations {
   String get feedbackActionReportProblem => 'Problem berichten';
 
   @override
-  String get feedbackActionHelpDeveloping => 'Hilf Maily zu entwickeln';
+  String get feedbackActionHelpDeveloping => 'Hilf ICMail zu entwickeln';
 
   @override
   String get feedbackTitle => 'Feedback';
 
   @override
-  String get feedbackIntro => 'Danke, dass du Maily testest!';
+  String get feedbackIntro => 'Danke, dass du ICMail testest!';
 
   @override
-  String get feedbackProvideInfoRequest => 'Bitte teile folgende Information mit, wenn du ein Problem berichtest:';
+  String get feedbackProvideInfoRequest =>
+      'Bitte teile folgende Information mit, wenn du ein Problem berichtest:';
 
   @override
   String get feedbackResultInfoCopied => 'kopiert';
@@ -643,25 +649,29 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settingsSecurityBlockExternalImages => 'Externe Bilder blockieren';
 
   @override
-  String get settingsSecurityBlockExternalImagesDescriptionTitle => 'Externe Bilder';
+  String get settingsSecurityBlockExternalImagesDescriptionTitle =>
+      'Externe Bilder';
 
   @override
-  String get settingsSecurityBlockExternalImagesDescriptionText => 'E-Mail-Nachrichten können Bilder enthalten, die entweder auf externen Servern integriert oder gehostet werden. Die letzteren externen Bilder können dem Absender der Nachricht Informationen offen legen, z.B. um dem Absender mitzuteilen, dass Sie die Nachricht geöffnet haben. Mit dieser Option können Sie solche externen Bilder blockieren, was das Risiko verringert, sensible Informationen zu enthüllen. Wenn Sie eine Nachricht lesen, können Sie diese Bilder immer noch pro Nachricht laden.';
+  String get settingsSecurityBlockExternalImagesDescriptionText =>
+      'E-Mail-Nachrichten können Bilder enthalten, die entweder auf externen Servern integriert oder gehostet werden. Die letzteren externen Bilder können dem Absender der Nachricht Informationen offen legen, z.B. um dem Absender mitzuteilen, dass Sie die Nachricht geöffnet haben. Mit dieser Option können Sie solche externen Bilder blockieren, was das Risiko verringert, sensible Informationen zu enthüllen. Wenn Sie eine Nachricht lesen, können Sie diese Bilder immer noch pro Nachricht laden.';
 
   @override
-  String get settingsSecurityMessageRenderingHtml => 'Gesamte Nachricht anzeigen';
+  String get settingsSecurityMessageRenderingHtml =>
+      'Gesamte Nachricht anzeigen';
 
   @override
-  String get settingsSecurityMessageRenderingPlainText => 'Nur den Text der Nachricht anzeigen';
+  String get settingsSecurityMessageRenderingPlainText =>
+      'Nur den Text der Nachricht anzeigen';
 
   @override
-  String get settingsSecurityLaunchModeLabel => 'Wie soll Maily Links öffnen?';
+  String get settingsSecurityLaunchModeLabel => 'Wie soll ICMail Links öffnen?';
 
   @override
   String get settingsSecurityLaunchModeExternal => 'Öffne Links extern';
 
   @override
-  String get settingsSecurityLaunchModeInApp => 'Öffne Links in Maily';
+  String get settingsSecurityLaunchModeInApp => 'Öffne Links in ICMail';
 
   @override
   String get settingsActionAccounts => 'Konten verwalten';
@@ -679,7 +689,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settingsReadReceipts => 'Lesebestätigungen';
 
   @override
-  String get readReceiptsSettingsIntroduction => 'Sollen Lesebestätigungs-Anforderungen angezeigt werden?';
+  String get readReceiptsSettingsIntroduction =>
+      'Sollen Lesebestätigungs-Anforderungen angezeigt werden?';
 
   @override
   String get readReceiptOptionAlways => 'Immer';
@@ -691,10 +702,11 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settingsFolders => 'Ordner';
 
   @override
-  String get folderNamesIntroduction => 'Welche Ordner-Namen möchtest du nutzen?';
+  String get folderNamesIntroduction =>
+      'Welche Ordner-Namen möchtest du nutzen?';
 
   @override
-  String get folderNamesSettingLocalized => 'Von Maily vorgegebene Namen';
+  String get folderNamesSettingLocalized => 'Von ICMail vorgegebene Namen';
 
   @override
   String get folderNamesSettingServer => 'Vom Maildienst gegebene Namen';
@@ -760,7 +772,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get developerModeTitle => 'Entwicklungs-Modus';
 
   @override
-  String get developerModeIntroduction => 'Mit einem aktivierten Entwicklungs-Modus kannst du den Sourcecode von Mails einsehen, siehst alle Fehler-Details und Text Anhänge in eine Mail Nachricht umwandeln.';
+  String get developerModeIntroduction =>
+      'Mit einem aktivierten Entwicklungs-Modus kannst du den Sourcecode von Mails einsehen, siehst alle Fehler-Details und Text Anhänge in eine Mail Nachricht umwandeln.';
 
   @override
   String get developerModeEnable => 'Entwicklungs-Modus aktivieren';
@@ -769,7 +782,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get developerShowAsEmail => 'Text zu E-Mail konvertieren';
 
   @override
-  String get developerShowAsEmailFailed => 'Dieser Text kann nicht in einer MIME Nachricht umgewandelt werden.';
+  String get developerShowAsEmailFailed =>
+      'Dieser Text kann nicht in einer MIME Nachricht umgewandelt werden.';
 
   @override
   String get designTitle => 'Design Einstellungen';
@@ -809,31 +823,35 @@ class AppLocalizationsDe extends AppLocalizations {
   String get securitySettingsTitle => 'Sicherheit';
 
   @override
-  String get securitySettingsIntro => 'Passe die Sicherheitseinstellungen deinen persönlichen Ansprüchen an.';
+  String get securitySettingsIntro =>
+      'Passe die Sicherheitseinstellungen deinen persönlichen Ansprüchen an.';
 
   @override
-  String get securityUnlockWithFaceId => 'Entsicher Maily mit Face ID.';
+  String get securityUnlockWithFaceId => 'Entsicher ICMail mit Face ID.';
 
   @override
-  String get securityUnlockWithTouchId => 'Entsicher Maily mit Touch ID.';
+  String get securityUnlockWithTouchId => 'Entsicher ICMail mit Touch ID.';
 
   @override
-  String get securityUnlockReason => 'Entsicher Maily.';
+  String get securityUnlockReason => 'Entsicher ICMail.';
 
   @override
-  String get securityUnlockDisableReason => 'Entsicher Maily um die Sicherung zu deaktvieren.';
+  String get securityUnlockDisableReason =>
+      'Entsicher ICMail um die Sicherung zu deaktvieren.';
 
   @override
-  String get securityUnlockNotAvailable => 'Dein Gerät unterstützt keine Biometrie-Absicherung. Vielleicht musst du zuerst die Displaysperre in den Geräteeinstellungen aktivieren.';
+  String get securityUnlockNotAvailable =>
+      'Dein Gerät unterstützt keine Biometrie-Absicherung. Vielleicht musst du zuerst die Displaysperre in den Geräteeinstellungen aktivieren.';
 
   @override
-  String get securityUnlockLabel => 'Maily Absichern';
+  String get securityUnlockLabel => 'ICMail Absichern';
 
   @override
-  String get securityUnlockDescriptionTitle => 'Maily Absichern';
+  String get securityUnlockDescriptionTitle => 'ICMail Absichern';
 
   @override
-  String get securityUnlockDescriptionText => 'Du kannst Maily absichern, so dass anderen deine E-Mails auch dann nicht lesen können, wenn sie Zugang zu deinem Gerät haben.';
+  String get securityUnlockDescriptionText =>
+      'Du kannst ICMail absichern, so dass anderen deine E-Mails auch dann nicht lesen können, wenn sie Zugang zu deinem Gerät haben.';
 
   @override
   String get securityLockImmediately => 'Sofort absichern';
@@ -845,10 +863,11 @@ class AppLocalizationsDe extends AppLocalizations {
   String get securityLockAfter30Minutes => 'Nach 30 Minuten absichern';
 
   @override
-  String get lockScreenTitle => 'Maily ist gesichert';
+  String get lockScreenTitle => 'ICMail ist gesichert';
 
   @override
-  String get lockScreenIntro => 'Maily ist gesichert, bitte authentifiziere dich um weiter zu machen.';
+  String get lockScreenIntro =>
+      'ICMail ist gesichert, bitte authentifiziere dich um weiter zu machen.';
 
   @override
   String get lockScreenUnlockAction => 'Entsichern';
@@ -887,13 +906,16 @@ class AppLocalizationsDe extends AppLocalizations {
   String get addAccountPasswordHint => 'Dein Passwort';
 
   @override
-  String get addAccountApplicationPasswordRequiredInfo => 'Dieser Anbieter verlangt ein Applikations-spezifisches Passwort.';
+  String get addAccountApplicationPasswordRequiredInfo =>
+      'Dieser Anbieter verlangt ein Applikations-spezifisches Passwort.';
 
   @override
-  String get addAccountApplicationPasswordRequiredButton => 'App Passwort erstellen';
+  String get addAccountApplicationPasswordRequiredButton =>
+      'App Passwort erstellen';
 
   @override
-  String get addAccountApplicationPasswordRequiredAcknowledged => 'Ich habe bereits ein App Passwort';
+  String get addAccountApplicationPasswordRequiredAcknowledged =>
+      'Ich habe bereits ein App Passwort';
 
   @override
   String get addAccountVerificationStep => 'Überprüfen';
@@ -930,10 +952,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get addAccountOauthSignInGoogle => 'Mit Google einloggen';
 
   @override
-  String get addAccountOauthSignInWithAppPassword => 'Oder erstelle ein Applikations-Passwort:';
+  String get addAccountOauthSignInWithAppPassword =>
+      'Oder erstelle ein Applikations-Passwort:';
 
   @override
-  String get accountAddImapAccessSetupMightBeRequired => 'Vielleicht musst Du bei deinem Anbieter den Zugang für E-Mail Apps aktivieren.';
+  String get accountAddImapAccessSetupMightBeRequired =>
+      'Vielleicht musst Du bei deinem Anbieter den Zugang für E-Mail Apps aktivieren.';
 
   @override
   String get addAccountSetupImapAccessButtonLabel => 'E-Mail Zugang aktivieren';
@@ -957,23 +981,26 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String editAccountFailureToConnectInfo(String name) {
-    return 'Maily konnte $name nicht erreichen.';
+    return 'ICMail konnte $name nicht erreichen.';
   }
 
   @override
   String get editAccountFailureToConnectRetryAction => 'Wiederholen';
 
   @override
-  String get editAccountFailureToConnectChangePasswordAction => 'Passwort ändern';
+  String get editAccountFailureToConnectChangePasswordAction =>
+      'Passwort ändern';
 
   @override
   String get editAccountFailureToConnectFixedTitle => 'Verbunden';
 
   @override
-  String get editAccountFailureToConnectFixedInfo => 'Das Konto ist wieder verbunden.';
+  String get editAccountFailureToConnectFixedInfo =>
+      'Das Konto ist wieder verbunden.';
 
   @override
-  String get editAccountIncludeInUnifiedLabel => 'zu \"Alle Konten\" hinzufügen';
+  String get editAccountIncludeInUnifiedLabel =>
+      'zu \"Alle Konten\" hinzufügen';
 
   @override
   String editAccountAliasLabel(String email) {
@@ -981,7 +1008,8 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get editAccountNoAliasesInfo => 'Du hast noch keine bekannten Alias E-Mail Adressen für dieses Konto.';
+  String get editAccountNoAliasesInfo =>
+      'Du hast noch keine bekannten Alias E-Mail Adressen für dieses Konto.';
 
   @override
   String editAccountAliasRemoved(String email) {
@@ -995,7 +1023,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get editAccountPlusAliasesSupported => 'Unterstützt + Aliase';
 
   @override
-  String get editAccountCheckPlusAliasAction => 'Teste Unterstützung für + Aliase';
+  String get editAccountCheckPlusAliasAction =>
+      'Teste Unterstützung für + Aliase';
 
   @override
   String get editAccountBccMyself => 'Setze mich auf BCC';
@@ -1004,10 +1033,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get editAccountBccMyselfDescriptionTitle => 'Setze mich auf CC';
 
   @override
-  String get editAccountBccMyselfDescriptionText => 'Du kannst Dir selbst eine \"BCC\" Kopie von jeder Nachricht schicken, die du von diesem Konto verschickst. Normalerweise ist das nicht nötig und nicht gewollt, weil alle gesendeten Nachrichten im\"Gesendete Nachrichten\" Ordner gespeichert werden.';
+  String get editAccountBccMyselfDescriptionText =>
+      'Du kannst Dir selbst eine \"BCC\" Kopie von jeder Nachricht schicken, die du von diesem Konto verschickst. Normalerweise ist das nicht nötig und nicht gewollt, weil alle gesendeten Nachrichten im\"Gesendete Nachrichten\" Ordner gespeichert werden.';
 
   @override
-  String get editAccountServerSettingsAction => 'Bearbeite Server Einstellungen';
+  String get editAccountServerSettingsAction =>
+      'Bearbeite Server Einstellungen';
 
   @override
   String get editAccountDeleteAccountAction => 'Lösche Konto';
@@ -1029,7 +1060,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get editAccountTestPlusAliasStepIntroductionTitle => 'Einleitung';
 
   @override
-  String editAccountTestPlusAliasStepIntroductionText(String accountName, String example) {
+  String editAccountTestPlusAliasStepIntroductionText(
+    String accountName,
+    String example,
+  ) {
     return 'Dein Konto $accountName könnte sogenannte + Aliase wie $example unterstützen.\nEin + Alias hilft dir Deine Identität zu schützen und kann gegen Spam helfen.\nUm dies zu testen, wird eine Nachricht an diese generierte Adresse gesendet. Wenn sie ankommt, dann unterstützt dein Anbieter  + Aliase und du kannst leicht neue generieren wenn Du eine E-Mail schreibst.';
   }
 
@@ -1082,7 +1116,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get editAccountLoggingEnabled => 'Log aktiviert, bitte neu starten';
 
   @override
-  String get editAccountLoggingDisabled => 'Log de-aktiviert, bitte neu starten';
+  String get editAccountLoggingDisabled =>
+      'Log de-aktiviert, bitte neu starten';
 
   @override
   String get accountDetailsFallbackTitle => 'Server Einstellungen';
@@ -1097,8 +1132,11 @@ class AppLocalizationsDe extends AppLocalizations {
   String get accountProviderCustom => 'Anderer E-Mail Service';
 
   @override
-  String accountDetailsErrorHostProblem(String incomingHost, String outgoingHost) {
-    return 'Maily kann den angegeben Server nicht erreich. Bitte überprüfe die Einstellugen des Posteingang-Servers \"$incomingHost\" und des Postausgang-Servers \"$outgoingHost\".';
+  String accountDetailsErrorHostProblem(
+    String incomingHost,
+    String outgoingHost,
+  ) {
+    return 'ICMail kann den angegeben Server nicht erreich. Bitte überprüfe die Einstellugen des Posteingang-Servers \"$incomingHost\" und des Postausgang-Servers \"$outgoingHost\".';
   }
 
   @override
@@ -1110,7 +1148,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get accountDetailsUserNameLabel => 'Login Name';
 
   @override
-  String get accountDetailsUserNameHint => 'Dein Login, falls es nicht die E-Mail ist';
+  String get accountDetailsUserNameHint =>
+      'Dein Login, falls es nicht die E-Mail ist';
 
   @override
   String get accountDetailsPasswordLabel => 'Login Passwort';
@@ -1134,10 +1173,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get accountDetailsOutgoingHint => 'Domäne wie smtp.domain.de';
 
   @override
-  String get accountDetailsAdvancedIncomingSectionTitle => 'Erweiterte Posteingang Einstellungen';
+  String get accountDetailsAdvancedIncomingSectionTitle =>
+      'Erweiterte Posteingang Einstellungen';
 
   @override
-  String get accountDetailsIncomingServerTypeLabel => 'Typ des Posteingang Servers:';
+  String get accountDetailsIncomingServerTypeLabel =>
+      'Typ des Posteingang Servers:';
 
   @override
   String get accountDetailsOptionAutomatic => 'automatisch';
@@ -1146,31 +1187,37 @@ class AppLocalizationsDe extends AppLocalizations {
   String get accountDetailsIncomingSecurityLabel => 'Posteingang Sicherheit:';
 
   @override
-  String get accountDetailsSecurityOptionNone => 'Plain (keine Verschlüsselung)';
+  String get accountDetailsSecurityOptionNone =>
+      'Plain (keine Verschlüsselung)';
 
   @override
   String get accountDetailsIncomingPortLabel => 'Posteingang Port';
 
   @override
-  String get accountDetailsPortHint => 'Leer lassen um automatisch finden zu lassen';
+  String get accountDetailsPortHint =>
+      'Leer lassen um automatisch finden zu lassen';
 
   @override
   String get accountDetailsIncomingUserNameLabel => 'Posteingang Login-Name';
 
   @override
-  String get accountDetailsAlternativeUserNameHint => 'Login, falls abweichend von oben';
+  String get accountDetailsAlternativeUserNameHint =>
+      'Login, falls abweichend von oben';
 
   @override
   String get accountDetailsIncomingPasswordLabel => 'Posteingang Passwort';
 
   @override
-  String get accountDetailsAlternativePasswordHint => 'Passwort, falls abweichend von oben';
+  String get accountDetailsAlternativePasswordHint =>
+      'Passwort, falls abweichend von oben';
 
   @override
-  String get accountDetailsAdvancedOutgoingSectionTitle => 'Erweiterte Postausgang Einstellungen';
+  String get accountDetailsAdvancedOutgoingSectionTitle =>
+      'Erweiterte Postausgang Einstellungen';
 
   @override
-  String get accountDetailsOutgoingServerTypeLabel => 'Typ des Postausgang Servers:';
+  String get accountDetailsOutgoingServerTypeLabel =>
+      'Typ des Postausgang Servers:';
 
   @override
   String get accountDetailsOutgoingSecurityLabel => 'Postausgang Sicherheit:';
@@ -1197,7 +1244,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get composeEmptyMessage => 'Leere Nachricht';
 
   @override
-  String get composeWarningNoSubject => 'Du hast kein Betreff geschrieben. Möchtest du die Nachricht ohne Betreff senden?';
+  String get composeWarningNoSubject =>
+      'Du hast kein Betreff geschrieben. Möchtest du die Nachricht ohne Betreff senden?';
 
   @override
   String get composeActionSentWithoutSubject => 'Senden';
@@ -1225,10 +1273,12 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get composeConvertToPlainTextEditorAction => 'Zu Text-Nachricht konvertieren';
+  String get composeConvertToPlainTextEditorAction =>
+      'Zu Text-Nachricht konvertieren';
 
   @override
-  String get composeConvertToHtmlEditorAction => 'Zu HTML-Nachricht konvertieren';
+  String get composeConvertToHtmlEditorAction =>
+      'Zu HTML-Nachricht konvertieren';
 
   @override
   String get composeContinueEditingAction => 'Weiter bearbeiten';
@@ -1293,22 +1343,25 @@ class AppLocalizationsDe extends AppLocalizations {
   String get languageSettingTitle => 'Sprache (Language)';
 
   @override
-  String get languageSettingLabel => 'Währe die Sprache für Maily:';
+  String get languageSettingLabel => 'Währe die Sprache für ICMail:';
 
   @override
   String get languageSettingSystemOption => 'Systemsprache';
 
   @override
-  String get languageSettingConfirmationTitle => 'Deutsch für Maily nutzen?';
+  String get languageSettingConfirmationTitle => 'Deutsch für ICMail nutzen?';
 
   @override
-  String get languageSettingConfirmationQuery => 'Bitte bestätige, dass deutsch als Sprache verwendet werden soll.';
+  String get languageSettingConfirmationQuery =>
+      'Bitte bestätige, dass deutsch als Sprache verwendet werden soll.';
 
   @override
-  String get languageSetInfo => 'Maily ist nun auf deutsch. Bitte starte die App neu.';
+  String get languageSetInfo =>
+      'ICMail ist nun auf deutsch. Bitte starte die App neu.';
 
   @override
-  String get languageSystemSetInfo => 'Maily wird nun die Systemsprache oder englisch nutzen, wenn die Systemprache nicht unterstützt wird. Bitte starte die App neu.';
+  String get languageSystemSetInfo =>
+      'ICMail wird nun die Systemsprache oder englisch nutzen, wenn die Systemprache nicht unterstützt wird. Bitte starte die App neu.';
 
   @override
   String get swipeSettingTitle => 'Wischgesten';
@@ -1326,10 +1379,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get signatureSettingsTitle => 'Signatur';
 
   @override
-  String get signatureSettingsComposeActionsInfo => 'Aktiviere die Signatur für folgende Nachrichten:';
+  String get signatureSettingsComposeActionsInfo =>
+      'Aktiviere die Signatur für folgende Nachrichten:';
 
   @override
-  String get signatureSettingsAccountInfo => 'Du kannst Signaturen für Konten in den Konten-Einstellungen festlegen.';
+  String get signatureSettingsAccountInfo =>
+      'Du kannst Signaturen für Konten in den Konten-Einstellungen festlegen.';
 
   @override
   String signatureSettingsAddForAccount(String account) {
@@ -1340,7 +1395,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get defaultSenderSettingsTitle => 'Standard Absender';
 
   @override
-  String get defaultSenderSettingsLabel => 'Wähle den Absender für neue Nachrichten aus.';
+  String get defaultSenderSettingsLabel =>
+      'Wähle den Absender für neue Nachrichten aus.';
 
   @override
   String defaultSenderSettingsFirstAccount(String email) {
@@ -1348,7 +1404,8 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get defaultSenderSettingsAliasInfo => 'Du kannst Alias E-Mail Adressen in den [AS] festlegen.';
+  String get defaultSenderSettingsAliasInfo =>
+      'Du kannst Alias E-Mail Adressen in den [AS] festlegen.';
 
   @override
   String get defaultSenderSettingsAliasAccountSettings => 'Konto-Einstellungen';
@@ -1357,13 +1414,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get replySettingsTitle => 'Nachrichten Format';
 
   @override
-  String get replySettingsIntro => 'In welchem Format möchtest du Nachrichten schreiben?';
+  String get replySettingsIntro =>
+      'In welchem Format möchtest du Nachrichten schreiben?';
 
   @override
   String get replySettingsFormatHtml => 'Immer HTML';
 
   @override
-  String get replySettingsFormatSameAsOriginal => 'Im selben Format wie die Orignal-Nachricht';
+  String get replySettingsFormatSameAsOriginal =>
+      'Im selben Format wie die Orignal-Nachricht';
 
   @override
   String get replySettingsFormatPlainText => 'Immer nur Text';
@@ -1460,7 +1519,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get extensionsTitle => 'Erweiterungen';
 
   @override
-  String get extensionsIntro => 'Mit Erweiterungen können E-Mail-Dienstleister, Firmen und Entwickler:innen Maily mit hilfreichen Funktionen ergänzen.';
+  String get extensionsIntro =>
+      'Mit Erweiterungen können E-Mail-Dienstleister, Firmen und Entwickler:innen ICMail mit hilfreichen Funktionen ergänzen.';
 
   @override
   String get extensionsLearnMoreAction => 'Lerne mehr über Erweiterungen';
@@ -1519,25 +1579,32 @@ class AppLocalizationsDe extends AppLocalizations {
   String get icalendarLabelParticipants => 'Teilnehmer';
 
   @override
-  String get icalendarParticipantStatusNeedsAction => 'Du wirst gebeten, diese Einladung zu beantworten.';
+  String get icalendarParticipantStatusNeedsAction =>
+      'Du wirst gebeten, diese Einladung zu beantworten.';
 
   @override
-  String get icalendarParticipantStatusAccepted => 'Du hast die Einladung akzeptiert.';
+  String get icalendarParticipantStatusAccepted =>
+      'Du hast die Einladung akzeptiert.';
 
   @override
-  String get icalendarParticipantStatusDeclined => 'Du hast die Einladung abgelehnt.';
+  String get icalendarParticipantStatusDeclined =>
+      'Du hast die Einladung abgelehnt.';
 
   @override
-  String get icalendarParticipantStatusAcceptedTentatively => 'Du hast die Einladung vorbehaltlich akzeptiert.';
+  String get icalendarParticipantStatusAcceptedTentatively =>
+      'Du hast die Einladung vorbehaltlich akzeptiert.';
 
   @override
-  String get icalendarParticipantStatusDelegated => 'Du hast die Teilnahme delegiert.';
+  String get icalendarParticipantStatusDelegated =>
+      'Du hast die Teilnahme delegiert.';
 
   @override
-  String get icalendarParticipantStatusInProcess => 'Die Aufgabe wird bearbeitet.';
+  String get icalendarParticipantStatusInProcess =>
+      'Die Aufgabe wird bearbeitet.';
 
   @override
-  String get icalendarParticipantStatusPartial => 'Die Aufgabe ist teilweise erledigt.';
+  String get icalendarParticipantStatusPartial =>
+      'Die Aufgabe ist teilweise erledigt.';
 
   @override
   String get icalendarParticipantStatusCompleted => 'Die Aufgabe ist erledigt.';
@@ -1549,7 +1616,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get icalendarParticipantStatusChangeTitle => 'Dein Status';
 
   @override
-  String get icalendarParticipantStatusChangeText => 'Möchtest Du an diese Einladung annehmen?';
+  String get icalendarParticipantStatusChangeText =>
+      'Möchtest Du an diese Einladung annehmen?';
 
   @override
   String icalendarParticipantStatusSentFailure(String details) {
@@ -1605,7 +1673,8 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get icalendarReplyWithoutParticipants => 'Diese Antwort enthält keine Teilnehmer:innen.';
+  String get icalendarReplyWithoutParticipants =>
+      'Diese Antwort enthält keine Teilnehmer:innen.';
 
   @override
   String icalendarReplyWithoutStatus(String attendee) {
@@ -1663,13 +1732,13 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get composeAppointmentRecurrenceUntilOptionSpecificDate => 'Bestimmtes Datum';
+  String get composeAppointmentRecurrenceUntilOptionSpecificDate =>
+      'Bestimmtes Datum';
 
   @override
   String composeAppointmentRecurrenceMonthlyOnDayOfMonth(int day) {
     final intl.NumberFormat dayNumberFormat = intl.NumberFormat.compactLong(
       locale: localeName,
-      
     );
     final String dayString = dayNumberFormat.format(day);
 
@@ -1677,7 +1746,8 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get composeAppointmentRecurrenceMonthlyOnWeekDay => 'Am Wochentag des Monats';
+  String get composeAppointmentRecurrenceMonthlyOnWeekDay =>
+      'Am Wochentag des Monats';
 
   @override
   String get composeAppointmentRecurrenceFirst => 'Erster';
@@ -1698,7 +1768,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String durationYears(int number) {
     final intl.NumberFormat numberNumberFormat = intl.NumberFormat.compactLong(
       locale: localeName,
-      
     );
     final String numberString = numberNumberFormat.format(number);
 
@@ -1715,7 +1784,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String durationMonths(int number) {
     final intl.NumberFormat numberNumberFormat = intl.NumberFormat.compactLong(
       locale: localeName,
-      
     );
     final String numberString = numberNumberFormat.format(number);
 
@@ -1732,7 +1800,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String durationWeeks(int number) {
     final intl.NumberFormat numberNumberFormat = intl.NumberFormat.compactLong(
       locale: localeName,
-      
     );
     final String numberString = numberNumberFormat.format(number);
 
@@ -1749,7 +1816,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String durationDays(int number) {
     final intl.NumberFormat numberNumberFormat = intl.NumberFormat.compactLong(
       locale: localeName,
-      
     );
     final String numberString = numberNumberFormat.format(number);
 
@@ -1766,7 +1832,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String durationHours(int number) {
     final intl.NumberFormat numberNumberFormat = intl.NumberFormat.compactLong(
       locale: localeName,
-      
     );
     final String numberString = numberNumberFormat.format(number);
 
@@ -1783,7 +1848,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String durationMinutes(int number) {
     final intl.NumberFormat numberNumberFormat = intl.NumberFormat.compactLong(
       locale: localeName,
-      
     );
     final String numberString = numberNumberFormat.format(number);
 

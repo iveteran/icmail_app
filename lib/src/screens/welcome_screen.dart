@@ -52,7 +52,7 @@ class WelcomeScreen extends ConsumerWidget {
           title: localizations.welcomePanel1Title,
           body: localizations.welcomePanel1Text,
           image: Image.asset(
-            'assets/images/maily.png',
+            'assets/images/icmail.png',
             height: 200,
             fit: BoxFit.cover,
             package: 'enough_mail_app',

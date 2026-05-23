@@ -9,7 +9,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:go_router/go_router.dart';
 
 import '../logger.dart';
-import '../models/message.dart' as maily;
+import '../models/message.dart' as icmail;
 import '../routes/routes.dart';
 import 'model.dart';
 
@@ -113,7 +113,7 @@ class NotificationService {
     }
   }
 
-  Future sendLocalNotificationForMailMessage(maily.Message message) =>
+  Future sendLocalNotificationForMailMessage(icmail.Message message) =>
       sendLocalNotificationForMail(
         message.mimeMessage,
         message.source.getMimeSource(message)?.mailClient.account.email ??
@@ -171,9 +171,9 @@ class NotificationService {
     DarwinNotificationDetails? iosPlatformChannelSpecifics;
     if (Platform.isAndroid) {
       androidPlatformChannelSpecifics = AndroidNotificationDetails(
-        'maily',
+        'ICMail',
         'Mail',
-        channelDescription: 'Maily',
+        channelDescription: 'ICMail',
         importance: Importance.max,
         priority: Priority.high,
         channelShowBadge: channelShowBadge,
@@ -200,7 +200,7 @@ class NotificationService {
     );
   }
 
-  void cancelNotificationForMessage(maily.Message message) =>
+  void cancelNotificationForMessage(icmail.Message message) =>
       cancelNotificationForMime(message.mimeMessage);
 
   void cancelNotificationForMime(MimeMessage mimeMessage) {

@@ -20,7 +20,7 @@ For a full email app based on this project, see [ICMail](https://github.com/ivet
 * Swipe left or right in the message details to view the next/previous message
 * Experimental 'stack' display of messages
 * Share received attachments to other apps and forward attachments to a new message
-* Share files to Maily
+* Share files to ICMail
 * Search for messages, including universal search
 * Delete all messages in trash and junk folders or in a search result
 * Archive messages
@@ -35,6 +35,10 @@ For a full email app based on this project, see [ICMail](https://github.com/ivet
 * Request and send read receipts
 * Extensible by email service providers, companies and developers
 
+## Miss a feature or found a bug?
+
+Please file feature requests and bugs at the [issue tracker](https://github.com/iveteran/icmail_app/issues).
+
 ## Localizations
 When you change translations, re-generate the translations files by calling `flutter gen-l10n`.
 Missing translations will be listed in `missing-translations.txt`.
@@ -47,9 +51,3 @@ by calling `dart run build_runner build --delete-conflicting-outputs`.
 
 ## License
 `icmail_app` is licensed under the [GNU Public License 3.0 "GPL"](LICENSE). In a nutshell this means that you can play around as much as possible for private reasons, but that you need to publish your changes under the GPL, as soon as you the code commercially.
-
-## Related Projects
-Check out these related projects:
-* [ICMail](https://github.com/iveteran/ICMail) email app based on icmail_app.
-
-

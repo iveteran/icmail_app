@@ -208,7 +208,7 @@ class OutlookOAuthClient extends OauthClient {
   ) async {
     final clientId = oauthClientId.id;
     final clientSecret = oauthClientId.secret;
-    const callbackUrlScheme = 'maily://oauth';
+    const callbackUrlScheme = 'icmail://oauth';
 
     // Construct the url
     final uri = Uri.https(
@@ -229,7 +229,7 @@ class OutlookOAuthClient extends OauthClient {
     // Present the dialog to the user
     final result = await FlutterWebAuth2.authenticate(
       url: uri,
-      callbackUrlScheme: 'maily', //callbackUrlScheme,
+      callbackUrlScheme: 'icmail', //callbackUrlScheme,
     );
 
     // Extract code from resulting url

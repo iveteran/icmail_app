@@ -73,7 +73,7 @@ class SettingsDeveloperModeScreen extends HookConsumerWidget {
                   child: Text(localizations.extensionsLearnMoreAction),
                   onPressed: () => launchUrl(
                     Uri.parse(
-                      'https://github.com/Enough-Software/enough_mail_app/wiki/Extensions',
+                      'https://github.com/iveteran/icmail_app/wiki/Extensions',
                     ),
                   ),
                 ),
@@ -135,7 +135,7 @@ class SettingsDeveloperModeScreen extends HookConsumerWidget {
           usedUrl = 'https://$url';
         }
         if (!url.endsWith('json')) {
-          usedUrl = url.endsWith('/') ? '$url.maily.json' : '$url/.maily.json';
+          usedUrl = url.endsWith('/') ? '$url.icmail.json' : '$url/.icmail.json';
         }
         final appExtension = await AppExtension.loadFromUrl(usedUrl);
         if (appExtension != null) {

@@ -20,7 +20,7 @@ class LocalizedDialogHelper {
     if (context.mounted) {
       showAboutDialog(
         context: context,
-        applicationName: 'Maily',
+        applicationName: 'ICMail',
         applicationVersion: version,
         applicationIcon: Icon(CommonPlatformIcons.mailRead),
         applicationLegalese: localizations.aboutApplicationLegalese,
@@ -29,14 +29,14 @@ class LocalizedDialogHelper {
             child: Text(localizations.feedbackActionSuggestFeature),
             onPressed: () async {
               await launcher
-                  .launchUrl(Uri.parse('https://maily.userecho.com/'));
+                  .launchUrl(Uri.parse('https://icmail.userecho.com/'));
             },
           ),
           TextButton(
             child: Text(localizations.feedbackActionReportProblem),
             onPressed: () async {
               await launcher
-                  .launchUrl(Uri.parse('https://maily.userecho.com/'));
+                  .launchUrl(Uri.parse('https://icmail.userecho.com/'));
             },
           ),
           TextButton(
