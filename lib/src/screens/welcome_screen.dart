@@ -57,7 +57,7 @@ class WelcomeScreen extends ConsumerWidget {
             fit: BoxFit.cover,
             package: 'icmail_app',
           ),
-          decoration: PageDecoration(pageColor: Colors.green[700]),
+          decoration: PageDecoration(pageColor: Colors.blueGrey[700]),
           footer: _buildFooter(context, localizations),
         ),
         PageViewModel(
