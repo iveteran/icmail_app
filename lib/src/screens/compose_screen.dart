@@ -153,7 +153,9 @@ class _ComposeScreenState extends ConsumerState<ComposeScreen> {
   @override
   void didChangeDependencies() {
     onSharedData = _onSharedData;
-    _composeMode = widget.data.composeMode;
+    //_composeMode = widget.data.composeMode;
+    // FIXME: The HtmlEditor does not work: can not to active to editable mode
+    _composeMode = ComposeMode.plainText;
     final mb = widget.data.messageBuilder;
     _toRecipients = mb.to ?? [];
     _ccRecipients = mb.cc ?? [];
@@ -577,6 +579,7 @@ class _ComposeScreenState extends ConsumerState<ComposeScreen> {
                         localizations.composeRequestReadReceiptAction,
                       ),
                     ),
+                    /* FIXME: The HtmlEditor does not work: can not to active to editable mode
                     if (_composeMode == ComposeMode.html)
                       PlatformPopupMenuItem<_OverflowMenuChoice>(
                         value: _OverflowMenuChoice.convertToPlainTextEditor,
@@ -591,6 +594,7 @@ class _ComposeScreenState extends ConsumerState<ComposeScreen> {
                           localizations.composeConvertToHtmlEditorAction,
                         ),
                       ),
+                    */
                     if (ref.read(settingsProvider).enableDeveloperMode)
                       PlatformPopupMenuItem<_OverflowMenuChoice>(
                         value: _OverflowMenuChoice.showSourceCode,
