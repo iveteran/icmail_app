@@ -29,14 +29,14 @@ class LocalizedDialogHelper {
             child: Text(localizations.feedbackActionSuggestFeature),
             onPressed: () async {
               await launcher
-                  .launchUrl(Uri.parse('https://icmail.userecho.com/'));
+                  .launchUrl(Uri.parse('https://x.com/matrixworksIO'));
             },
           ),
           TextButton(
             child: Text(localizations.feedbackActionReportProblem),
             onPressed: () async {
               await launcher
-                  .launchUrl(Uri.parse('https://icmail.userecho.com/'));
+                  .launchUrl(Uri.parse('https://x.com/matrixworksIO'));
             },
           ),
           TextButton(
