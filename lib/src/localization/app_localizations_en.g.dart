@@ -57,14 +57,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get splashLoading2 => 'Getting your ICMail engine ready...';
 
   @override
-  String get splashLoading3 => 'Launching ICMail in 10, 9, 8...';
+  String get splashLoading3 => 'Launching ICMail ...';
 
   @override
   String get welcomePanel1Title => 'ICMail';
 
   @override
   String get welcomePanel1Text =>
-      'Welcome to ICMail, your friendly and fast email helper!';
+      'Welcome to ICMail, an open-source email app!';
 
   @override
   String get welcomePanel2Title => 'Accounts';

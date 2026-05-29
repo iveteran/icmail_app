@@ -57,7 +57,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get splashLoading2 => 'ICMail fängt an zu arbeiten...';
 
   @override
-  String get splashLoading3 => 'ICMail startet in 10, 9, 8...';
+  String get splashLoading3 => 'ICMail startet in ...';
 
   @override
   String get welcomePanel1Title => 'ICMail';

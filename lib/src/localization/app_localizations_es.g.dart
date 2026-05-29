@@ -57,7 +57,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get splashLoading2 => 'Preparando tu Motor de ICMail...';
 
   @override
-  String get splashLoading3 => 'Lanzando en el 10, 9, 8...';
+  String get splashLoading3 => 'Lanzando en el ...';
 
   @override
   String get welcomePanel1Title => 'ICMail';

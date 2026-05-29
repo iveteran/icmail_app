@@ -64,7 +64,7 @@
   "@splashLoading2": {
     "description": "Message shown on splash screen while loading"
   },
-  "splashLoading3": "Lanzando en el 10, 9, 8...",
+  "splashLoading3": "Lanzando en el ...",
   "@splashLoading3": {
     "description": "Message shown on splash screen while loading"
   },

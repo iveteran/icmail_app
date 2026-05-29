@@ -64,7 +64,7 @@
   "@splashLoading2": {
     "description": "Message shown on splash screen while loading"
   },
-  "splashLoading3": "ICMail startet in 10, 9, 8...",
+  "splashLoading3": "ICMail startet in ...",
   "@splashLoading3": {
     "description": "Message shown on splash screen while loading"
   },

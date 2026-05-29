@@ -199,7 +199,7 @@ abstract class AppLocalizations {
   /// Message shown on splash screen while loading
   ///
   /// In en, this message translates to:
-  /// **'Launching ICMail in 10, 9, 8...'**
+  /// **'Launching ICMail ...'**
   String get splashLoading3;
 
   /// Welcome panel title
@@ -211,7 +211,7 @@ abstract class AppLocalizations {
   /// Welcome message shown on first panel
   ///
   /// In en, this message translates to:
-  /// **'Welcome to ICMail, your friendly and fast email helper!'**
+  /// **'Welcome to ICMail, an open-source email app!'**
   String get welcomePanel1Text;
 
   /// Welcome panel title
