@@ -120,7 +120,7 @@ class _SettingsFeedbackScreenState
                     child: Text(localizations.feedbackActionSuggestFeature),
                     onPressed: () async {
                       await launcher
-                          .launchUrl(Uri.parse('https://x.com/matrixworksIO'));
+                          .launchUrl(Uri.parse('https://x.com/matrixworksIO/status/2060219263441584315'));
                     },
                   ),
                 ),
@@ -130,7 +130,7 @@ class _SettingsFeedbackScreenState
                     child: Text(localizations.feedbackActionReportProblem),
                     onPressed: () async {
                       await launcher
-                          .launchUrl(Uri.parse('https://x.com/matrixworksIO'));
+                          .launchUrl(Uri.parse('https://x.com/matrixworksIO/status/2060219263441584315'));
                     },
                   ),
                 ),
