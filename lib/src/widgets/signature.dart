@@ -25,7 +25,8 @@ class SignatureWidget extends HookConsumerWidget {
     final account = this.account;
     final signatureState = useState<String?>(
       account?.getSignatureHtml(ref.text.localeName) ??
-          ref.read(settingsProvider.notifier).getSignatureHtmlGlobal(),
+          //ref.read(settingsProvider.notifier).getSignatureHtmlGlobal(),  // bug: CircularDependencyError
+          "Sent via ICMail",  // FIXME: This is a temporary workaround, and it makes it impossible for users to modify the global signature.
     );
     final signature = signatureState.value;
 
