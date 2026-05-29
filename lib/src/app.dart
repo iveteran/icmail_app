@@ -77,17 +77,16 @@ class EnoughMailApp extends HookConsumerWidget {
         materialDarkTheme: themeSettingsData.darkTheme,
         materialThemeMode: themeSettingsData.themeMode,
         cupertinoTheme: themeSettingsData.cupertinoTheme,
+        builder: languageTag == null
+        ? null
+        : (context, child) => Localizations.override(
+          context: context,
+          locale: Locale(languageTag),
+          child: child!,
+        ),
       ),
     );
-    if (languageTag == null) {
-      return app;
-    }
-
-    return Localizations.override(
-      context: context,
-      locale: Locale(languageTag),
-      child: app,
-    );
+    return app;
   }
 }
 
