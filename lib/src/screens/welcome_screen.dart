@@ -51,11 +51,14 @@ class WelcomeScreen extends ConsumerWidget {
         PageViewModel(
           title: localizations.welcomePanel1Title,
           body: localizations.welcomePanel1Text,
-          image: Image.asset(
-            'assets/images/icmail.png',
-            height: 200,
-            fit: BoxFit.cover,
-            package: 'icmail_app',
+          image: Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: Image.asset(
+              'assets/images/icmail.png',
+              height: 200,
+              fit: BoxFit.cover,
+              package: 'icmail_app',
+            ),
           ),
           decoration: PageDecoration(pageColor: Colors.blueGrey[700]),
           footer: _buildFooter(context, localizations),
