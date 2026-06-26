@@ -26,9 +26,9 @@ import 'share/provider.dart';
 // AppStyles appStyles = AppStyles.instance;
 
 /// Runs the app
-class EnoughMailApp extends HookConsumerWidget {
+class ICMailApp extends HookConsumerWidget {
   /// Creates a new app
-  const EnoughMailApp({
+  const ICMailApp({
     super.key,
     required this.appName,
     this.mimeSourceFactory = const AsyncMimeSourceFactory(
